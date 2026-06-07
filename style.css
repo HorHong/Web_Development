@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: #f5f0e8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #1a1a2e;
+    color: white;
+}
+
+.header-text {
+    color: #e8c547;
+}
+
+.group-header {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.avatar {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #e8c547;
+    background: white;
+    flex-shrink: 0;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.group-header h1 {
+    font-size: 42px;
+    margin-bottom: 5px;
+}
+
+.group-header p {
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+/* Contact Bar */
+.contact-bar {
+    background: #e8c547;
+    padding: 15px 25px;
+}
+
+.contact-bar ul {
+    max-width: 1000px;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.contact-bar a {
+    color: #1a1a2e;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-bar a:hover {
+    text-decoration: underline;
+}
+
+/* Main Layout */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 20px;
+    color: #1a1a2e;
+    font-weight: 700;
+    margin-bottom: 18px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #e8c547;
+}
+
+/* About */
+.section p {
+    color: #555;
+}
+
+/* Experience */
+.job {
+    border-left: 3px solid #e8c547;
+    padding-left: 16px;
+    margin-bottom: 25px;
+}
+
+.job h5 {
+    font-size: 17px;
+    color: #111;
+    margin-bottom: 3px;
+}
+
+.company {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.date-badge {
+    display: inline-block;
+    background: #1a1a2e;
+    color: #e8c547;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+.job ul {
+    padding-left: 18px;
+}
+
+.job li {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Education */
+.edu-item {
+    margin-bottom: 18px;
+}
+
+.major {
+    font-weight: 700;
+    color: #111;
+}
+
+.school {
+    color: #666;
+    font-size: 14px;
+}
+
+.year {
+    color: #aa870a;
+    font-size: 13px;
+}
+
+/* Skills */
+.skill-group {
+    margin-bottom: 18px;
+}
+
+.skill-group h5 {
+    margin-bottom: 10px;
+    color: #666;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.skill-badge {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.badge {
+    background: #1a1a2e;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 12px;
+}
+
+.badge.yellow {
+    background: #e8c547;
+    color: #1a1a2e;
+    font-weight: 600;
+}
+
+/* Languages */
+.lang-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.dot-group {
+    display: flex;
+    gap: 6px;
+}
+
+.lang-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #1a1a2e;
+}
+
+.dot-grey {
+    background: #c5c5c5;
+}
+
+/* Footer */
+footer {
+    background: #1a1a2e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-top: 4px solid #e8c547;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* Responsive Tablet */
+@media (max-width: 768px) {
+
+    .group-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .group-header h1 {
+        font-size: 34px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+    }
+
+    .contact-bar ul {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .lang-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+}
+
+/* Responsive Mobile */
+@media (max-width: 480px) {
+
+    .group-header {
+        padding: 30px 15px;
+    }
+
+    .group-header h1 {
+        font-size: 28px;
+    }
+
+    .avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .contact-bar {
+        padding: 15px;
+    }
+
+    .contact-bar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-bar li {
+        font-size: 14px;
+        word-break: break-word;
+    }
+
+    main {
+        padding: 20px 15px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+
+    .job h5 {
+        font-size: 15px;
+    }
+
+    .badge {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 15px;
+    }
+}
